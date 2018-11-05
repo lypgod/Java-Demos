@@ -18,6 +18,7 @@
     <modules>
         <module>MultiThread</module>
         <module>Java8</module>
+        <module>MyBatis</module>
     </modules>
 
     <dependencyManagement>
