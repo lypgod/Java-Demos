@@ -19,6 +19,7 @@
         <module>MultiThread</module>
         <module>Java8</module>
         <module>MyBatis</module>
+        <module>SortingAlgorithm</module>
     </modules>
 
     <dependencyManagement>
