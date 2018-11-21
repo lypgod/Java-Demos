@@ -4,6 +4,7 @@
     <title>Jquery WebSocket Demo</title>
 </head>
 <body>
+
     <label for="username">用户名：</label><input id="username" type="text"/>
     <button onclick="initSocket()">连接</button>
 
@@ -12,7 +13,9 @@
     <button onclick="send()">发送</button>
 
     <br/>=====================================================<br/>
-    连接状态: <button onclick="clearConnectStatu()">清空</button><br/>
+    连接状态:
+    <button onclick="clearConnectStatu()">清空</button>
+    <br/>
     <div id="connStatus"></div>
 
     <br/>=====================================================<br/>
@@ -101,10 +104,9 @@
         if (strDate >= 0 && strDate <= 9) {
             strDate = "0" + strDate;
         }
-        var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+        return date.getFullYear() + seperator1 + month + seperator1 + strDate
             + " " + date.getHours() + seperator2 + date.getMinutes()
             + seperator2 + date.getSeconds();
-        return currentdate;
     }
 
     function heart() {

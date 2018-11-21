@@ -20,6 +20,7 @@
         <module>Java8</module>
         <module>SortingAlgorithm</module>
         <module>UtilTools</module>
+        <module>Java6</module>
     </modules>
 
     <dependencyManagement>

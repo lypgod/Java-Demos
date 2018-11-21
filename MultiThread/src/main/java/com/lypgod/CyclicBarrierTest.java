@@ -16,9 +16,7 @@ public class CyclicBarrierTest {
      */
     private static void summonDragon() {
         // 设置第二个屏障点，等待7位法师收集完7颗龙珠，召唤神龙
-        CyclicBarrier summonDragonBarrier = new CyclicBarrier(THREAD_COUNT_NUM, () -> {
-            System.out.println("已经集齐7颗龙珠，开始召唤神龙！");
-        });
+        CyclicBarrier summonDragonBarrier = new CyclicBarrier(THREAD_COUNT_NUM, () -> System.out.println("已经集齐7颗龙珠，开始召唤神龙！"));
 
         // 收集龙珠
         for (int i = 0; i < THREAD_COUNT_NUM; i++) {
