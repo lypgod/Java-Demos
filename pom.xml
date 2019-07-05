@@ -21,6 +21,7 @@
         <module>SortingAlgorithm</module>
         <module>UtilTools</module>
         <module>Java6</module>
+        <module>DesignPatterns</module>
     </modules>
 
     <dependencyManagement>

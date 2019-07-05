@@ -1,0 +1,27 @@
+package com.lypgod.test.g02.structural.patterns.p06.adapter.pattern;
+
+/**
+ * @author richard
+ */
+public class AudioPlayer implements MediaPlayer {
+    private MediaAdapter mediaAdapter;
+
+    @Override
+    public void play(String audioType, String fileName) {
+
+        //播放 mp3 音乐文件的内置支持
+        if (audioType.equalsIgnoreCase(MEDIA_TYPE_MP3)) {
+            System.out.println("Playing mp3 file. Name: " + fileName);
+            return;
+        }
+
+        //mediaAdapter 提供了播放其他文件格式的支持
+        if (audioType.equalsIgnoreCase(MEDIA_TYPE_VLC) || audioType.equalsIgnoreCase(MEDIA_TYPE_MP4)) {
+            mediaAdapter = new MediaAdapter(audioType);
+            mediaAdapter.play(audioType, fileName);
+            return;
+        }
+
+        System.out.println("Invalid media. " + audioType + " format not supported");
+    }
+}
