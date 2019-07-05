@@ -1,7 +1,5 @@
 package com.lypgod.test.org.apache.commons.lang;
 
-import org.apache.commons.lang3.StringUtils;
-
 public class ApacheCommonsLang3 {
     public static void main(String[] args) {
 //        System.out.println("isBlank(null)\t" + StringUtils.isBlank(null));
@@ -76,6 +74,10 @@ public class ApacheCommonsLang3 {
 //        System.out.print(", N4: " + StringUtils.substringBetween(formatted, ",", "]"));
 //        System.out.print(", N5: " + StringUtils.substringAfterLast(formatted, "|"));
 
-        System.out.println(StringUtils.swapCase("I am a-A*a"));
+//        System.out.println(StringUtils.swapCase("I am a-A*a"));
+
+//        System.out.print(StringUtils.substringBetween("03\\d{4}", "\\d{", "}"));
+
+        System.out.print("033\\d{5}hao".replaceAll("\\\\d\\{\\d*\\}", "-----"));
     }
 }
